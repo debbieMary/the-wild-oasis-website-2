@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .spinner {
+    margin: 3.2rem auto 1.6rem;
+    width: 60px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 8px solid theme("colors.primary.900");
+    border-right-color: theme("colors.primary.200");
+    animation: rotate 1s infinite linear;
+  }
+
+
+
+  .spinner-mini {
+    margin: 30px;
+    width: 20px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 2px solid theme("colors.primary.200");
+    border-right-color: transparent;
+    animation: rotate 1s infinite linear;
+  }
+
+
+
+  @keyframes rotate {
+    to {
+      transform: rotate(1turn);
+    }
+  }
+}
+
+/* For data picker */
+/*.rdp {
+  --rdp-cell-size: 32px !important;
+  --rdp-accent-color: theme("colors.accent.500") !important;
+  --rdp-background-color: theme("colors.accent.600") !important;
+  margin: 0 !important;
+}*/
+
+
+
+.rdp-root {
+  /* --rdp-cell-size: 32px !important; */
+  --rdp-nav_button-width: 20px !important;
+  --rdp-nav_button-height: 20px !important;
+  --rdp-day-width: 32px !important;
+  --rdp-day-height: 32px !important;
+  --rdp-day_button-width: 32px !important;
+  --rdp-day_button-height: 32px !important;
+  --rdp-accent-color: theme("colors.accent.500") !important;
+  --rdp-accent-background-color: theme("colors.accent.600") !important;
+  margin: 0 !important;
+}
+
+/*.rdp-day_button {
+  background: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 25px !important;
+  height: 25px !important;
+  border: var(--rdp-day_button-border);
+  border-radius: var(--rdp-day_button-border-radius);
+}
+
+
+.rdp-day {
+    width: 25px !important;
+    height: 25px !important;
+    text-align: center;
+}
+
+
+.rdp-nav {
+    position: static !important;
+    inset-block-start: 0;
+    inset-inline-end: 0;
+    height: var(--rdp-nav-height);
+}*/
